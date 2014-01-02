@@ -5,7 +5,7 @@ var FRAME = ( function () {
 		VERSION: 2,
 
 		Curves: {
-			
+
 			Linear: function ( points ) {
 
 				var linear = function ( p0, p1, t0, t1, t ) {
@@ -174,7 +174,7 @@ var FRAME = ( function () {
 					elements.sort( function ( a, b ) { return a.start - b.start; } );
 
 				},
-				
+
 				update: function ( time ) {
 
 					if ( time < prevtime ) {
@@ -260,9 +260,9 @@ var FRAME = ( function () {
 		},
 
 		TimelineElement: function () {
-			
+
 			var id = 0;
-			
+
 			return function ( name, layer, start, end, module, parameters ) {
 
 				this.id = id ++;
@@ -274,11 +274,11 @@ var FRAME = ( function () {
 				this.parameters = parameters;
 
 				this.module.init( this.parameters );
-				
+
 			};
 
 		}()
 
-	}
+	};
 
 } )();
