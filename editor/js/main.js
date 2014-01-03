@@ -175,6 +175,12 @@ require(
 
 		}
 
+		require( ['examplesPath/obsidian/js/modules/ColorModuleAMD'], function ( ColorModule ) {
+
+			var moduleColor = new ColorModule( json.config );
+			console.log( 'module loaded via RequireJS', moduleColor );
+		} );
+
 		// curves
 
 		var curves = [];
