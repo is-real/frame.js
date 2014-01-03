@@ -1,10 +1,13 @@
+
+// framePath: requireJS path to this folder
+
 define(
 	[
-		'frame/Curves',
-		'frame/Module',
-		'frame/ModuleParameter',
-		'frame/Timeline',
-		'frame/TimelineElement'
+		'framePath/Curves',
+		'framePath/Module',
+		'framePath/ModuleParameter',
+		'framePath/Timeline',
+		'framePath/TimelineElement'
 	],
 	function ( Curves, Module, ModuleParameter, Timeline, TimelineElement ) {
 
